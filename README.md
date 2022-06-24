@@ -1,7 +1,7 @@
-# Build and Deploy a React Admin Dashboard App With Theming, Tables, Charts, Calendar, Kanban and More
+# Sales dashboard
 ![Shoppy](https://i.ibb.co/W6g39w3/image.png)
 
 ## Introduction
-This is a code repository for the corresponding video tutorial.
+This a Sales dashboard developed using React, tailwind and Material UI and some others components.
 
 ## Launch your development career with project-based coaching - https://www.jsmastery.pro

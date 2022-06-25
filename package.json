@@ -2,6 +2,9 @@
   "name": "project_syncfusion_dashboard",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "14.16.0"
+  },
   "dependencies": {
     "@aldabil/react-scheduler": "^2.2.1",
     "@asseinfo/react-kanban": "^2.2.0",
@@ -13,16 +16,6 @@
     "@mui/material": "^5.8.2",
     "@mui/styles": "^5.8.4",
     "@mui/x-data-grid": "^5.12.1",
-    "@syncfusion/ej2": "^19.4.48",
-    "@syncfusion/ej2-react-calendars": "^19.4.48",
-    "@syncfusion/ej2-react-charts": "^19.4.50",
-    "@syncfusion/ej2-react-dropdowns": "^19.4.52",
-    "@syncfusion/ej2-react-grids": "^19.4.50",
-    "@syncfusion/ej2-react-inputs": "^19.4.52",
-    "@syncfusion/ej2-react-kanban": "^19.4.48",
-    "@syncfusion/ej2-react-popups": "^19.4.52",
-    "@syncfusion/ej2-react-richtexteditor": "^19.4.50",
-    "@syncfusion/ej2-react-schedule": "^19.4.50",
     "antd": "^4.21.2",
     "chart.js": "^3.8.0",
     "date-fns": "^2.28.0",

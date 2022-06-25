@@ -13,7 +13,7 @@ import { Bar as BarChart } from 'react-chartjs-2';
 import faker from 'faker';
 
 import { ChartsHeader } from '../../components';
-import { useStateContext } from '../../contexts/ContextProvider';
+// import { useStateContext } from '../../contexts/ContextProvider';
 
 ChartJS.register(
   CategoryScale,
@@ -51,17 +51,13 @@ export const data = {
   ],
 };
 
-const Bar = () => {
-  const { currentMode } = useStateContext();
-
-  return (
-    <div className="m-4 md:m-10 mt-24 p-10 bg-white dark:bg-secondary-dark-bg rounded-3xl">
-      <ChartsHeader category="Bar" title="Olympic Medal Counts - RIO" />
-      <div className=" w-full">
-        <BarChart options={options} data={data} />
-      </div>
+const Bar = () => (
+  <div className="m-4 md:m-10 mt-24 p-10 bg-white dark:bg-secondary-dark-bg rounded-3xl">
+    <ChartsHeader category="Bar" title="Olympic Medal Counts - RIO" />
+    <div className=" w-full">
+      <BarChart options={options} data={data} />
     </div>
-  );
-};
+  </div>
+);
 
 export default Bar;

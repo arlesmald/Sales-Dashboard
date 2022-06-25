@@ -107,7 +107,7 @@ const Ecommerce = () => {
               </div>
             </div>
             <div className="flex flex-col justify-center items-center">
-              <Stacked currentMode={currentMode} width="320px" height="560px" />
+              <Stacked currentMode={currentMode} />
             </div>
           </div>
         </div>

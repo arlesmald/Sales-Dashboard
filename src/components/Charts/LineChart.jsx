@@ -2,7 +2,7 @@ import React from 'react';
 import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend } from 'chart.js';
 import { Line } from 'react-chartjs-2';
 import faker from 'faker';
-import { useStateContext } from '../../contexts/ContextProvider';
+// import { useStateContext } from '../../contexts/ContextProvider';
 
 ChartJS.register(
   CategoryScale,
@@ -47,13 +47,9 @@ export const data = {
   ],
 };
 
-const LineChart = () => {
-  const { currentMode } = useStateContext();
-
-  return (
-    // background={currentMode === 'Dark' ? '#33373E' : '#fff'}
-    <Line options={options} data={data} />
-  );
-};
+const LineChart = () => (
+  // background={currentMode === 'Dark' ? '#33373E' : '#fff'}
+  <Line options={options} data={data} />
+);
 
 export default LineChart;

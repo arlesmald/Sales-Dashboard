@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Pie } from 'react-chartjs-2';
-import { useStateContext } from '../../contexts/ContextProvider';
+// import { useStateContext } from '../../contexts/ContextProvider';
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
@@ -35,12 +35,8 @@ export const data = {
   ],
 };
 
-const Doughnut = ({ id, datadd, legendVisiblity, height }) => {
-  const { currentMode } = useStateContext();
-
-  return (
-    <Pie options={{ plugins: { legend: { display: legendVisiblity } } }} data={data} />
-  );
-};
+const Doughnut = ({ legendVisiblity }) => (
+  <Pie options={{ plugins: { legend: { display: legendVisiblity } } }} data={data} />
+);
 
 export default Doughnut;

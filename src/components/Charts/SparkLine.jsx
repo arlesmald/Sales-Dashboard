@@ -3,7 +3,7 @@ import { Sparklines, SparklinesLine, SparklinesBars } from 'react-sparklines';
 
 class SparkLine extends React.PureComponent {
   render() {
-    const { id, height, width, color, data, type ,currentColor } = this.props;
+    const { height, width, type } = this.props;
 
     return (
       <Sparklines height={height} width={width} data={[5, 10, 5, 20, 8, 15]}>

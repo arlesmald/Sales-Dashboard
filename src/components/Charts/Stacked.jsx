@@ -4,7 +4,7 @@ import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Toolti
 import { Bar } from 'react-chartjs-2';
 
 import { stackedChartData } from '../../data/dummy';
-import { useStateContext } from '../../contexts/ContextProvider';
+// import { useStateContext } from '../../contexts/ContextProvider';
 
 ChartJS.register(
   CategoryScale,
@@ -51,12 +51,8 @@ export const data = {
   ],
 };
 
-const Stacked = ({ width, height }) => {
-  const { currentMode } = useStateContext();
-
-  return (
-    <Bar options={options} data={data} style={{ width: '100%', height: '100%' }} />
-  );
-};
+const Stacked = () => (
+  <Bar options={options} data={data} style={{ width: '100%', height: '100%' }} />
+);
 
 export default Stacked;

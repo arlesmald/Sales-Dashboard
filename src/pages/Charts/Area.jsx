@@ -1,11 +1,10 @@
 import React from 'react';
 import { Chart as ChartJS, CategoryScale, LinearScale, Filler, PointElement, LineElement, Title, Tooltip, Legend } from 'chart.js';
-
-import { ChartsHeader } from '../../components';
-import { useStateContext } from '../../contexts/ContextProvider';
-
 import { Line } from 'react-chartjs-2';
 import faker from 'faker';
+
+import { ChartsHeader } from '../../components';
+// import { useStateContext } from '../../contexts/ContextProvider';
 
 ChartJS.register(
   CategoryScale,
@@ -60,15 +59,11 @@ export const data = {
   ],
 };
 
-const Area = () => {
-  const { currentMode } = useStateContext();
-
-  return (
-    <div className="m-4 md:m-10 mt-24 p-10 bg-white dark:bg-secondary-dark-bg rounded-3xl">
-      <ChartsHeader category="Area" title="Inflation Rate in percentage" />
-      <Line options={options} data={data} />
-    </div>
-  );
-};
+const Area = () => (
+  <div className="m-4 md:m-10 mt-24 p-10 bg-white dark:bg-secondary-dark-bg rounded-3xl">
+    <ChartsHeader category="Area" title="Inflation Rate in percentage" />
+    <Line options={options} data={data} />
+  </div>
+);
 
 export default Area;
